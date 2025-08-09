@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mary Slessor Memorial Presbyterian Cathedral</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'church-blue': {
+                'DEFAULT': '#0A2463',
+                'light': '#1E3A8A',
+                'dark': '#061A40',
+              },
+              'church-gold': {
+                'DEFAULT': '#FFD700',
+                'light': '#FFFBEB',
+                'dark': '#D4AF37',
+              },
+              'church-dark': '#1E293B',
+              'church-gray': '#F1F5F9', // Light background
+              'neutral': {
+                  100: '#F8FAFC', // light gray
+                  200: '#F1F5F9', // church-gray
+                  300: '#E2E8F0',
+                  400: '#CBD5E1',
+                  500: '#94A3B8',
+                  600: '#64748B',
+                  700: '#475569',
+                  800: '#334155', // church-dark
+                  900: '#1E293B'
+              },
+              'accent': {
+                  'success': '#16A34A',
+                  'danger': '#DC2626',
+                  'warning': '#F59E0B'
+              }
+            },
+            fontFamily: {
+              serif: ['Playfair Display', 'serif'],
+              sans: ['Inter', 'sans-serif'],
+            },
+            animation: {
+                'fade-in-out': 'fadeInOut 2s ease-in-out',
+            },
+            keyframes: {
+                fadeInOut: {
+                    '0%': { opacity: 0 },
+                    '25%': { opacity: 1 },
+                    '75%': { opacity: 1 },
+                    '100%': { opacity: 0 },
+                }
+            }
+          }
+        }
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "vite": "https://esm.sh/vite@^7.1.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.0.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-white">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <div id="back-to-top-root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
